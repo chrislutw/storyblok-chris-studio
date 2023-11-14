@@ -1,5 +1,7 @@
 <script setup>
-const story = await useAsyncStoryblok('home', { version: 'draft' })
+const story = await useAsyncStoryblok('home', {
+  version: useRoute().query._storyblok ? 'draft' : 'published'
+})
 </script>
 
 <template>

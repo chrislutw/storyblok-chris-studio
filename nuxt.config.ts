@@ -6,5 +6,10 @@ export default defineNuxtConfig({
     '@storyblok/nuxt',
     '@nuxtjs/tailwindcss'
   ],
-  storyblok: { accessToken: 'Yh1LwM3Kdmyw4DGbeKfLcAtt', apiOptions: { region: 'us' } }
+  storyblok: {
+    accessToken: process.env.STORYBLOK_TOKEN,
+    apiOptions: {
+      region: 'us'
+    }
+  }
 })
