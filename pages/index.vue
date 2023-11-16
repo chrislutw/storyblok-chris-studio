@@ -7,6 +7,5 @@ const story = await useAsyncStoryblok('home', {
 </script>
 
 <template>
-  {{ locale }}
   <StoryblokComponent v-if="story" :blok="story.content" />
 </template>

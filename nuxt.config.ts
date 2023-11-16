@@ -6,13 +6,13 @@ export default defineNuxtConfig({
     // this page is generated at build time and cached permanently
     '/**': { prerender: true },
     // this page will be revalidated every 60 seconds, in the background
-    '/cron': { isr: 60 },
+    '/*/cron': { isr: 60 },
     // this page will be generated on demand and then cached permanently
-    '/static': { isr: true },
+    '/*/static': { isr: true },
     // this page will be always fresh
-    '/dynamic': { isr: false },
+    '/*/dynamic': { isr: false },
     // this page is client side only
-    '/spa': { ssr: false }
+    '/*/spa': { ssr: false }
   },
   i18n: {
     strategy: 'prefix_except_default',
