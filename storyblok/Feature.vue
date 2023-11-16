@@ -1,7 +1,7 @@
 <template>
   <div v-editable="blok" class="bg-[#f7f6fd] rounded-[5px] text-center w-full p-12">
     <h3 class="font-bold text-2xl text-[#1d243d]">
-      {{ blok.name }}
+      {{ blok.name }}{{ blok.select }}
     </h3>
   </div>
 </template>
